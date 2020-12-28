@@ -1,0 +1,21 @@
+Country,Count,Continent,iso_alpha
+India,403,Asia,IND
+USA,63,North America,USA
+Netherlands,63,Europe,NLD
+United Kingdom,13,Europe,GBR
+France,125,Europe,FRA
+Canada,11,North America,CAN
+Belgium ,3,Europe,BEL
+Germany,9,Europe,DEU
+Switzerland,6,Europe,CHE
+Spain ,1,Europe,ESP
+Australia,5,Oceania,AUS
+New Zealand ,2,Oceania,NZL
+South Africa,3,Africa,ZAF
+Japan ,2,Asia,JPN
+China,2,Asia,CHN
+Sweden,5,Europe,SWE
+Austria,1,Europe,AUT
+Norway,2,Europe,NOR
+Pakistan,1,Asia,PAK
+Singapore ,5,Asia,SGP
