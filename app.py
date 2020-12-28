@@ -142,7 +142,7 @@ app.layout = html.Div(children=[
                         ),
                         dbc.Col(
                             html.Div([
-                                #html.Img(id='wordCloudImage',src='./assets/wordcloud1.png')
+                                html.Img(id='wordCloudImage',src='./assets/wordcloud1.png')
                             ]),id="Div5",width = 6 
                         )
                     ]),
