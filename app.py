@@ -93,6 +93,23 @@ fig1.layout.template = "custom_dark"
 fig2 = px.pie(dfInviteCount, values=dfInviteCount['Count'], names=dfInviteCount['Direction'])
 fig2.layout.template = "custom_dark"
 
+# Define Card
+card1 = dbc.Card(
+    [
+        dbc.CardBody([
+            dcc.Graph(id="MessagesGraph",figure=fig1)
+        ],className = "card1")
+    ],className= "card1main"
+)
+
+card2 = dbc.Card(
+    [
+        dbc.CardBody([
+            dcc.Graph(id="InvitationGraph",figure=fig2)
+        ],className = "card2")
+    ],className= "card2main"
+)
+
 # Creating an instance of the dash object
 app = dash.Dash(__name__,title="LinkedInVisualization",external_stylesheets=[dbc.themes.GRID])
 
@@ -124,12 +141,23 @@ app.layout = html.Div(children=[
                     dbc.Row([
                         dbc.Col(
                             html.Div([
-                                dcc.Graph(id="MessagesGraph",figure=fig1)
+                                html.Div([
+                                    card1
+                                    
+                                ],id="InnerDiv1"),
+                                
+                                #dcc.Graph(id="MessagesGraph",figure=fig1),
+                                html.Br()
+
                             ]),id="Div2",width = 6
                         ),
                         dbc.Col(
                             html.Div([
-                                dcc.Graph(id="InvitationGraph",figure=fig2)
+                                html.Div([
+                                    card2
+                                ],id="InnerDiv2"),
+                                #dcc.Graph(id="InvitationGraph",figure=fig2)
+                                html.Br()
                             ]),id="Div3",width = 6
                         )
                     ]),

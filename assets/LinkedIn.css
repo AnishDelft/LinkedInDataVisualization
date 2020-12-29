@@ -1,6 +1,6 @@
 body{
     margin:0px;
-    background-color: #30404D;
+    background-color: #000000;
 }
 
 #Div1{
@@ -11,4 +11,28 @@ body{
 #H1{
     color:whitesmoke;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+#InnerDiv1{
+    margin-left: 30px;
+    width: 90%;
+    height: 90%;
+}
+
+#InnerDiv2{
+    margin-left: 30px;
+    width: 90%;
+    height: 90%;
+}
+
+#Div2{
+    background-color:#30404D;
+    border:white;
+    border-radius: 8px;
+}
+
+#Div3{
+    background-color:#30404D;
+    border:white;
+    border-radius: 8px;
 }
